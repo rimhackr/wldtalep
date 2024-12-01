@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة شي إن</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* إعدادات أساسية */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #e74c3c;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* الأسئلة الشائعة */
+        #faq {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #faq h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .faq-item {
+            background-color: #f9f9f9;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item h3 {
+            font-size: 22px;
+            color: #e74c3c;
+        }
+
+        .faq-item p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        /* آراء العملاء */
+        #reviews {
+            background-color: #f1f2f6;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #reviews h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .review {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .review h3 {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+
+        .review p {
+            font-size: 18px;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        /* تواصل عبر الواتساب */
+        #contact {
+            background-color: #2c3e50;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-whatsapp a {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-whatsapp a:hover {
+            background-color: #128c7e;
+        }
+
+        .contact-whatsapp i {
+            margin-left: 10px;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* تأثيرات متقدمة */
+        header, #faq, #reviews, #contact {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header:hover, #faq:hover, #reviews:hover, #contact:hover {
+            transform: scale(1.05);
+        }
+
+        /* تنسيق استجابة الأجهزة المحمولة */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #faq h2 {
+                font-size: 24px;
+            }
+
+            .faq-item {
+                margin: 10px 0;
+            }
+
+            #reviews h2 {
+                font-size: 24px;
+            }
+
+            .review h3 {
+                font-size: 18px;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <div class="logo">
+            <h1>دورة شي إن</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+                <li><a href="#reviews">آراء العملاء</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الأسئلة الشائعة -->
+    <section id="faq">
+        <h2>الأسئلة الشائعة</h2>
+        <div class="faq-item">
+            <h3>كم سعر الدورة؟</h3>
+            <p>690 أوقية جديدة.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كيفية تسجيل في الدورة؟</h3>
+            <p>تواصل معنا على واتساب 41674531.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كيف أضيف المال داخل كارت؟</h3>
+            <p>من خلال بينانس، ويمكننا شحنها لك إذا لم تكن لديك خبرة في بينانس.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كم مدة الدورة؟</h3>
+            <p>ثلاثة أيام.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل يتوفر فريق دعم؟</h3>
+            <p>نعم، يتابع معك أحد أعضاء فريقنا حتى تتعلم.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل يتوفر التعليم عن قرب؟</h3>
+            <p>نعم، يتوفر السعر 19 ألف قديمة.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كم عدد الفيديوهات؟</h3>
+            <p>ثلاثة فيديوهات.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل يحتاج مني خبرة سابقة؟</h3>
+            <p>لا، الدورة مناسبة للجميع.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل الدورة عن شي إن فقط؟</h3>
+            <p>نعم، الدورة تتعلق فقط بشرح كيفية الشراء من شي إن.</p>
+        </div>
+    </section>
+
+    <!-- آراء العملاء -->
+    <section id="reviews">
+        <h2>آراء العملاء</h2>
+        <div class="review">
+            <h3>عزيزة أحمد</h3>
+            <p>في علم الله عنكم موثقة ومعاملاتكم طيبة. قمت بالطلب من شي إن وتم الشحن بدون أي مشاكل، فتبارك الله 🥰 شهادة الله.</p>
+        </div>
+        <div class="review">
+            <h3>رملة الشيخ</h3>
+            <p>دورة زين، مشاء الله، قمت بالطلب من شي إن بسهولة. شكرًا لمحمد محمود طالب.</p>
+        </div>
+        <div class="review">
+            <h3>هودا ميني</h3>
+            <p>استفدت معاكم، فتبارك الله، وسوف يصل طلبي هذا الأسبوع إن شاء الله. شكرًا.</p>
+        </div>
+        <div class="review">
+            <h3>منت أسليمان</h3>
+            <p>فتبارك الله، معاملتكم جيدة وأخلاقياتكم ممتازة. استفدت معاكم ولن أواجه أي مشكلة مع أي طلب مستقبلاً.</p>
+        </div>
+        <div class="review">
+            <h3>سهلة القرطبي</h3>
+            <p>دورة رائعة تعلمنا الكثير، وكانوا يرافقونا خطوة بخطوة. ننصح الجميع بالانضمام.</p>
+        </div>
+        <div class="review">
+            <h3>لاله عبد الله لمين</h3>
+            <p>استفدت كثيرًا من الدورة. تعلمت كيفية شراء من شي إن باستخدام بطاقة فيزا العالمية. شكراً لكم.</p>
+        </div>
+    </section>
+
+    <!-- تواصل عبر الواتساب -->
+    <section id="contact">
+        <div class="contact-whatsapp">
+            <a href="https://wa.me/41674531" target="_blank" class="whatsapp-button">
+                <i class="fa fa-whatsapp"></i> تواصل معنا على واتساب
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 دورة شي إن. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
